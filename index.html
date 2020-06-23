@@ -5,7 +5,7 @@
 	<title>portfolio</title>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	  
 	  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 	   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -28,12 +28,36 @@
 
 			position: relative;
 			margin: 10px;
-			margin-top: 10%;
+			margin-top: 16%;
 			font-size: 30px;
 			left: 70%;
 
 		
 		}
+		#portfolio .contents button{
+
+			background-color: #3498db;
+			padding: 20px;
+			border: 1px solid black;
+			border-radius: 50px;
+			margin-bottom: 100px;
+			position: relative;
+			margin-left: 10%;
+			text-align: center;
+			color: black;
+
+		}
+		#portfolio .contents button:hover{
+
+			color:black;
+			background-color: #2ECC71;
+			transition: 0.7s;
+		}
+        #portfolio button a{
+
+        	text-decoration: none;
+        	color: black;
+        }
 		#mainsvg{
 
 			transform: scale(0.8);
@@ -67,6 +91,7 @@
 			position: relative;
 			left: -14%;
 			top: 30%;
+
 		}
 		#Education .contents{
 
@@ -225,6 +250,7 @@
                 font-size: 70px;
                 font-weight: bold;
                 transform: translate(-50%,-50%);
+                cursor: pointer;
 
 		}
 		
@@ -268,6 +294,7 @@
 			top: 60%;
 			left: 37%;
 			font-size: 40px;
+			cursor: pointer;
 		}
 
 		@media screen and (max-width: 760px)
@@ -455,6 +482,10 @@
 
 				
             
+		}
+		#Contactusid ul li{
+
+			font-size: 19px;
 		}
 		.icons i:hover{
 
@@ -1674,8 +1705,10 @@
 <div id="portfolio">
 	<img src="portf.png">
 	<div class="contents">
-	<p>I am an independent and self-motivated person, believes in continuous learning.I was born in khammam. I am currently pursuing my B.TECH in Computer Science Engineering in VIT Vellore. I am a hard worker and practical thinker. Love to solve practical problems.Passionate about my work.</p>
-	
+	<button><a href="http://deepakmukka-com.stackstaging.com/scrapper.php" target="_blank">Weather Scrapper</button></a>	
+	<button><a href="https://deepakmukka1.github.io/reactiontester/" target="_blank">Simple Reaction Tester</button></a>
+	<button><a href="#">Covid-19 Stats</button><br></a>
+	<button>Coming soon....</button>
 </div>	
 </div>
 <div id="Education">
@@ -1893,14 +1926,12 @@
 </svg>
 <br>
 <div class="contents">
-	I am an independent and self-motivated person, believes in continuous learning.I was born in khammam. I am currently pursuing my B.TECH in Computer Science Engineering in VIT Vellore. I am a hard worker and practical thinker. Love to solve practical problems.Passionate about my work.I am an independent and self-motivated person, believes in continuous learning.I was born in khammam. I am currently pursuing my B.TECH in Computer Science Engineering in VIT Vellore. I am a hard worker and practical thinker. Love to solve practical problems.Passionate about my work.
-	<div id="form">
-
-
-
-
-
-	</div>
+	<ul style="list-style: none;font-size: 26px;">
+				<li><h2><b>Get in touch</b></h2></li><br>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Khammam,Telangana</li><br>
+				<li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+91 7330945676</li><br>
+				<li><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;ramu92013@gmail.com</li>
+			</ul>	
 	</div>
 	<div class="icons">
 	<a href="https://www.facebook.com/profile.php?id=100004712028806" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -1925,7 +1956,7 @@ typewriter.typeString("I'm a ")
     .typeString('<span style="color:#1559BA;">Web Developer</span>')
     .pauseFor(800)
     .deleteChars(13)
-    .typeString('<span style="color:#1559BA;">Coder</span>')
+    .typeString('<span style="color:#1559BA;">App Developer</span>')
     .pauseFor(800)
     .start();
     window.addEventListener("scroll",function(){
@@ -1939,6 +1970,23 @@ typewriter.typeString("I'm a ")
 
     		menu.classList.remove("cus-nav");
     	}
+
+    })
+      $("li").click(function(){
+
+
+       $("ul").css("left","-100%");
+
+
+
+    },function(){
+
+
+$("#check").prop("checked",false)
+
+
+
+
 
     })
 </script>
